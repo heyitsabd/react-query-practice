@@ -22,7 +22,6 @@ const RQPostDetails = () => {
         },
         enabled: !!postId
     })
-         console.log("DATTAA",data);
 
     if (!postId) return <h2>Post not found</h2>
 

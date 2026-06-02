@@ -4,11 +4,15 @@ import PostsTraditional from './components/PostsTraditional';
 import PostsRQ from './components/PostsRQ';
 import RQPostDetails from './components/RQPostDetails';
 import Home from './components/Home';
+import Pagination from './components/Pagination';
+import InfiniteScroll from './components/InfiniteScroll';
 
 const navItems = [
   { to: '/', label: 'Home', end: true },
   { to: '/posts', label: 'Traditional Posts' },
   { to: '/rq-posts', label: 'RQ Posts' },
+  { to: '/pagination', label: 'Pagination' },
+  { to: '/infinite-scroll', label: 'Infinite Scroll' },
 ]
 
 function App() {
@@ -45,6 +49,8 @@ function App() {
             <Route path="/posts" element={<PostsTraditional />} />
             <Route path="/rq-posts" element={<PostsRQ />} />
             <Route path="/rq-posts/:postId" element={<RQPostDetails />} />
+            <Route path='/pagination' element={<Pagination />} />
+            <Route path='/infinite-scroll' element={<InfiniteScroll />} />
           </Routes>
         </main>
       </div>
